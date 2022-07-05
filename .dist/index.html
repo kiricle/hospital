@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.min.css?_v=20220704205910">
+  <link rel="stylesheet" href="./css/style.min.css?_v=20220705160929">
   <title>HOSPITAL</title>
 </head>
 
@@ -13,19 +13,27 @@
   <header class="header">
   <div class="container">
     <nav class="menu">
-      <a href="#" class="menu__logo">LOGO</a>
-      <ul class="links-list">
-        <li class="links-list__item">Головна</li>
-        <li class="links-list__item">Відділення</li>
-        <li class="links-list__item">Лікарі</li>
-        <li class="links-list__item">Відгуки</li>
-        <li class="links-list__item">Контакти</li>
-      </ul>
-      <button class="oval-btn">Записатися</button>
+      <div class="menu__wrap">
+        <div class="header__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <a href="#" class="menu__logo">LOGO</a>
+        <ul class="links-list">
+          <li class="links-list__item">Головна</li>
+          <li class="links-list__item">Відділення</li>
+          <li class="links-list__item">Лікарі</li>
+          <li class="links-list__item">Відгуки</li>
+          <li class="links-list__item">Контакти</li>
+        </ul>
+        <button class="oval-btn" data-type="enroll">Записатися</button>
+      </div>
     </nav>
+    <div class="menu__popup"></div>
   </div>
 </header>
-  <script src="js/app.min.js?_v=20220704205910"></script>
+  <script src="js/app.min.js?_v=20220705160929"></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 @import './variables.scss';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 * {
   padding: 0;
@@ -24,8 +24,12 @@ body {
   max-width: 1412px;
 }
 
+.header__burger {
+  display: none;
+}
+
 .menu {
-  margin: 50px 0;
+  margin: 50px 0 0;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -35,6 +39,11 @@ body {
     color: $nav-color;
     font-size: 36px;
     line-height: 140%;
+
+    &:hover {
+      color: $btn-bgc;
+      cursor: pointer;
+    }
   }
 }
 
@@ -44,7 +53,7 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  gap: 56px;
+  flex: auto;
 
   &__item {
     font-size: 24px;
@@ -55,6 +64,14 @@ body {
       cursor: pointer;
     }
   }
+}
+
+.menu__wrap {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0 5px;
 }
 
 .oval-btn {
@@ -70,4 +87,78 @@ body {
     background-color: $nav-color;
     cursor: pointer;
   }
+}
+
+.menu__popup {
+  display: none;
+}
+
+@media (max-width: 930px) {
+  .header__burger {
+    display: flex;
+    justify-content: space-between;
+    width: 40px;
+    height: 30px;
+    align-self: center;
+    flex-wrap: wrap;
+
+    &:hover {
+      cursor: pointer;
+      & span {
+        background-color: $btn-bgc;
+      }
+    }
+
+    & span {
+      width: 100%;
+      height: 4px;
+      background-color: $burger-color;
+      transition: .3s;
+    }
+
+    &.header__burger_active span:nth-child(1) {
+      transform: translateY(10px) rotate(45deg);
+    }
+
+    &.header__burger_active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    &.header__burger_active span:nth-child(3) {
+      transform: translateY(-10px) rotate(-45deg);
+    }
+  }
+
+  .menu .links-list, .menu__wrap .oval-btn {
+    display: none;
+  }
+
+  .menu__wrap {
+    justify-content: space-between;
+  }
+
+  .menu__popup {
+    position: fixed;
+    left: -100%;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    align-items: center;
+    z-index: 2;
+    &.menu__popup_open {
+      left: 0;
+      background-color: $burger-bgc;
+    }
+    & .links-list {
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 30px;
+      flex: 0 0;
+      margin-bottom: 10px;
+    }
+  } 
 }
