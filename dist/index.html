@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.min.css?_v=20220706214253">
+  <link rel="stylesheet" href="./css/style.min.css?_v=20220707215125">
   <title>HOSPITAL</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?_v=20220706214253">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap&_v=20220706214253" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?_v=20220707215125">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap&_v=20220707215125" rel="stylesheet">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
         </div>
         <a href="./index.html" class="menu__logo">LOGO</a>
         <ul class="links-list">
-          <li class="links-list__item"><a href="./index.html">Головна</a></li>
+          <li class="links-list__item links-list__item_active"><a href="./index.html">Головна</a></li>
           <li class="links-list__item"><a href="#">Відділення</a></li>
           <li class="links-list__item"><a href="#">Лікарі</a></li>
           <li class="links-list__item"><a href="#">Відгуки</a></li>
@@ -237,9 +237,53 @@
         </div>
       </div>
     </div>
+    <button class="rectrangle-btn">Завантажити ще<i class="fa fa-solid fa-arrow-down"></i></button>
   </section>
 </main>
-  <script src="js/app.min.js?_v=20220706214253"></script>
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__column">
+        <h2 class="footer__title">Ми на карті</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1324.0047261370185!2d35.05332442801894!3d48.417962846958716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbfca35286fd41%3A0x7aa878b7c6c441cb!2z0JTQvdGW0L_RgNC-0L_QtdGC0YDQvtCy0YHRjNC60LAg0L7QsdC70LDRgdC90LAg0LTQuNGC0Y_Rh9CwINC70ZbQutCw0YDQvdGP!5e0!3m2!1sru!2sua!4v1657188921517!5m2!1sru!2sua"
+          width="451" height="217" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h3 class="footer__item">Дніпропетровська обласна дитяча лікарня
+          вулиця Космічна, 13</h3>
+        <h3 class="footer__item"> Цілодобово</h3>
+      </div>
+      <div class="footer__column">
+        <h2 class="footer__title">Послуги</h2>
+        <ul class="footer__list">
+          <li class="footer__item">Головна</li>
+          <li class="footer__item">Відділення</li>
+          <li class="footer__item">Лікарі</li>
+          <li class="footer__item">Відгуки</li>
+          <li class="footer__item">Контакти</li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h2 class="footer__title">Контакти</h2>
+        <div class="footer__socials socials">
+          <h3 class="footer__item">Шукайте нас:</h3>
+          <div class="socials__images">
+            <a href="https:\\www.facebook.com" target="_blank"><picture><source srcset="img/5.webp" type="image/webp"><img src="img/5.png" alt="facebook" class="socials__image"></picture></a>
+            <a href="https:\\www.instagram.com" target="_blank"><picture><source srcset="img/6.webp" type="image/webp"><img src="img/6.png" alt="instagram" class="socials__image"></picture></a>
+            <a href="https:\\www.youtube.com" target="_blank"><picture><source srcset="img/7.webp" type="image/webp"><img src="img/7.png" alt="youtube" class="socials__image"></picture></a>
+          </div>
+        </div>
+        <h3 class="footer__item">info@kosmichna.ua</h3>
+        <h3 class="footer__item">056 378 8000</h3>
+        <button class="oval-btn">Залишити відгуки</button>
+      </div>
+    </div>
+  </div>
+  <footer class="subfooter">
+    <h3 class="subfooter__title">&copy; MageekSoft 2022. Всі права захищені.</h3>
+  </footer>
+</footer>
+  <script src="js/app.min.js?_v=20220707215125"></script>
 </body>
 
 </html>

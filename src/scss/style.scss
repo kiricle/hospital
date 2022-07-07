@@ -1,6 +1,7 @@
 @import './variables.scss';
 @import './header.scss';
 @import './main.scss';
+@import './footer.scss';
 
 * {
   padding: 0;
@@ -17,5 +18,6 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1412px;
+  // max-width: 1412px;
+  width: min(90%, 1412px);
 }

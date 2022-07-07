@@ -73,6 +73,7 @@
 .reviews-section {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 60px;
 }
 
@@ -151,5 +152,30 @@
     font-size: 24px;
     line-height: 140%;
     color: $review-higlight-color;
+  }
+}
+
+.rectrangle-btn {
+  width: fit-content;
+  padding: 12px 20px;
+  background-color: $btn-bgc;
+  border: 2px solid $btn-border;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 140%;
+  color: $btn-color;
+  border-radius: 16px;
+  transition: background-color .2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $nav-color;
+    
+  }
+
+  & .fa-arrow-down {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: normal;
   }
 }
