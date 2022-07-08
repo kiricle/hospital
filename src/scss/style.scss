@@ -1,7 +1,8 @@
-@import './variables.scss';
-@import './header.scss';
-@import './main.scss';
-@import './footer.scss';
+@import './partials//variables.scss';
+@import './partials//header.scss';
+@import './partials//main.scss';
+@import './partials//footer.scss';
+@import './partials/slider.scss';
 
 * {
   padding: 0;

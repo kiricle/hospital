@@ -5,37 +5,68 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.min.css?_v=20220707215125">
+  <link rel="stylesheet" href="./css/style.min.css?_v=20220708184533">
   <title>HOSPITAL</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?_v=20220707215125">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap&_v=20220707215125" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?_v=20220708184533">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap&_v=20220708184533" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
-  <div class="container">
-    <nav class="menu">
-      <div class="menu__wrap">
-        <div class="header__burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <a href="./index.html" class="menu__logo">LOGO</a>
-        <ul class="links-list">
-          <li class="links-list__item links-list__item_active"><a href="./index.html">Головна</a></li>
-          <li class="links-list__item"><a href="#">Відділення</a></li>
-          <li class="links-list__item"><a href="#">Лікарі</a></li>
-          <li class="links-list__item"><a href="#">Відгуки</a></li>
-          <li class="links-list__item"><a href="#">Контакти</a></li>
-        </ul>
-        <button class="oval-btn" data-type="enroll">Записатися</button>
+ <div class="container">
+  <nav class="menu">
+    <div class="menu__wrap">
+      <div class="header__burger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </nav>
-    <div class="menu__popup"></div>
+      <a href="./index.html" class="menu__logo">LOGO</a>
+      <ul class="links-list">
+        <li class="links-list__item links-list__item_active"><a href="./index.html">Головна</a></li>
+        <li class="links-list__item"><a href="#">Відділення</a></li>
+        <li class="links-list__item"><a href="#">Лікарі</a></li>
+        <li class="links-list__item"><a href="#">Відгуки</a></li>
+        <li class="links-list__item"><a href="#">Контакти</a></li>
+      </ul>
+      <button class="oval-btn" data-type="enroll">Записатися</button>
+    </div>
+  </nav>
+  <div class="menu__popup"></div>
+</div>
+ <div class="slider">
+  <div class="slide__container">
+    <picture><source srcset="img/8.webp" type="image/webp"><img src="img/8.png" alt="slider-img" class="slider__image"></picture>
+    <div class="slider__overlay">
+      <h2 class="slider__title">Лікарня космічна</h2>
+      <p class="slider__description">In nonumy scripserit quo, facer efficiantur ne eam. Aperiam persius omittam cu ius.
+        Mei in eros verear. Sea quot meis mollis ne.</p>
+    </div>
   </div>
+  <div class="slide__container">
+    <picture><source srcset="img/8.webp" type="image/webp"><img src="img/8.png" alt="slider-img" class="slider__image"></picture>
+    <div class="slider__overlay">
+      <h2 class="slider__title">Лікарня земна</h2>
+      <p class="slider__description">In nonumy scripserit quo, facer efficiantur ne eam. Aperiam persius omittam cu ius.
+        Mei in eros verear. Sea quot meis mollis ne.</p>
+    </div>
+  </div> 
+  <div class="slide__container">
+    <picture><source srcset="img/8.webp" type="image/webp"><img src="img/8.png" alt="slider-img" class="slider__image"></picture>
+    <div class="slider__overlay">
+      <h2 class="slider__title">Лікарня підземна</h2>
+      <p class="slider__description">In nonumy scripserit quo, facer efficiantur ne eam. Aperiam persius omittam cu ius.
+        Mei in eros verear. Sea quot meis mollis ne.</p>
+    </div>
+  </div> 
+  <div class="dots-container">
+    <span class="slider__dot slider__dot_active"></span>
+    <span class="slider__dot"></span>
+    <span class="slider__dot"></span>
+  </div>
+</div>
 </header>
 
 
@@ -283,7 +314,7 @@
     <h3 class="subfooter__title">&copy; MageekSoft 2022. Всі права захищені.</h3>
   </footer>
 </footer>
-  <script src="js/app.min.js?_v=20220707215125"></script>
+  <script src="js/app.min.js?_v=20220708184533"></script>
 </body>
 
 </html>
