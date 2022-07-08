@@ -10,6 +10,7 @@ export function activateSlider() {
 
   const showSlide = n => {
     clearInterval(interval);
+
     if (n >= slides.length) n = 0;
     if (n < 0) n = slides.length;
 
@@ -32,7 +33,7 @@ export function activateSlider() {
   const handleMove = e => {
     if (e.target.classList.contains('slider__dot_active')) return;
     if (!e.target.classList.contains('slider__dot')) return;
-    showSlide(e.target.dataset.id);
+    showSlide(Number(e.target.dataset.id));
   }
 
   const dotsContainer = document.querySelector('.dots-container');
