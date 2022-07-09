@@ -10,4 +10,10 @@ yarn add
 or
 npm i
 ```
-3. Go to dist folder and run index.html
+3. Go to terminal and run the command:
+```
+yarn run gulp
+or
+npm run gulp
+```
+4. Go to dist folder and run index.html
