@@ -1,5 +1,5 @@
 export function activateSlider() {
-  if(!document.getElementsByClassName('slide__container')) return;
+  if(document.getElementsByClassName('slide__container').length === 0) return;
   const slides = document.getElementsByClassName('slide__container');
   const dots = document.getElementsByClassName('slider__dot');
   let interval;
