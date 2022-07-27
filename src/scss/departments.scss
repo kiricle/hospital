@@ -1,6 +1,8 @@
 @import './partials//variables.scss';
 @import './partials//header.scss';
 @import './partials/footer.scss';
+@import './components/card.scss';
+@import './components/main-header.scss';
 
 * {
   padding: 0;
@@ -18,12 +20,15 @@ body {
 
 .container {
   margin: 0 auto;
-  // max-width: 1412px;
   width: min(90%, 1412px);
 }
 
 .main {
   width: 100%;
+
+  &__img {
+    width: 100%;
+  }
 
   &__search {
     color: $input-color;
@@ -52,39 +57,6 @@ body {
   }
 }
 
-.main-header {
-  margin-top: 50px;
-  width: 100%;
-  background-color: $path-bgc;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding: 20px 0;
-
-  &__title {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 140%;
-  }
-
-  &__path {
-    display: flex;
-    gap: 5px;
-  }
-
-  &__node {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 140%;
-
-    &:not(:last-of-type)::after {
-      content: "»";
-      margin-left: 5px;
-    }
-  }
-}
-
 .input-container {
   position: relative;
   width: 100%;
@@ -108,167 +80,11 @@ body {
   gap: 50px;
   margin-top: 60px;
   width: 100%;
+
   &__title {
     text-align: center;
     font-size: 48px;
     line-height: 140%;
-  }
-}
-
-.department {
-  border: 2px solid #E2E2E2;
-  padding: 45px;
-  border-radius: 16px;
-  width: 100%;
-
-  &__row {
-    display: flex;
-    gap: 70px;
-  }
-
-  &__img {
-    object-fit: cover;
-  }
-
-  &__column {
-    display: flex;
-    flex-basis: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  &__info {}
-
-  &__title {
-    font-size: 40px;
-    line-height: 140%;
-    margin-bottom: 16px;
-  }
-
-  &__description {
-    font-size: 24px;
-    line-height: 140%;
-  }
-
-  &__features {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 140%;
-    background-color: #DFF6FF;
-    padding: 32px;
-    border-radius: 8px;
-  }
-}
-
-.features {
-  &__row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
-
-@media screen and (max-width: 1309px) {
-  .features {
-    &__row {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-    }
-  }
-
-  .border-left {
-    border-left: none;
-  }
-  
-  .feature__column {
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 915px) {
-  .department__row {
-    flex-direction: column;
-  }
-
-  .feature {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-  
-    &__number {
-      background-color: #049DD9;
-      color: white;
-      padding: 10px;
-      border-radius: 10px;
-    }
-  
-    &__name {}
-  
-    &__column {
-      display: flex;
-      flex-direction: row;
-      gap: 25px;
-    }
-  }
-  
-  .features__row {
-    flex-direction: row;
-  }
-
-  .border-left {
-    border-left: none;
-  }
-}
-
-@media screen and (max-width: 818px) {
-  .feature__column {
-    flex-direction: column;
-  }
-  .features__row {
-    flex-direction: column;
-  }
-}
-
-.feature {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-
-  &__number {
-    background-color: #049DD9;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-  }
-
-  &__name {}
-
-  &__column {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-  }
-}
-
-.border-left {
-  border-left: 1px solid black;
-  padding-left: 52px;
-}
-
-@media screen and (max-width: 1387px) {
-  .border-left {
-    border-left: 1px solid black;
-    padding-left: 25px;
-  }
-}
-
-@media screen and (max-width: 1351px) {
-  .border-left {
-    border-left: 1px solid black;
-    padding-left: 10px;
   }
 }
 
@@ -288,4 +104,32 @@ body {
   &:hover {
     background-color: $nav-color;
   }
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-size: 64px;
+    line-height: 140%;
+    margin-bottom: 90px;
+  }
+
+  &__paragraph {
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }

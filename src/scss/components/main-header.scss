@@ -1,0 +1,32 @@
+.main-header {
+  margin-top: 50px;
+  width: 100%;
+  background-color: $path-bgc;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 0;
+
+  &__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+  }
+
+  &__path {
+    display: flex;
+    gap: 5px;
+  }
+
+  &__node {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+
+    &:not(:last-of-type)::after {
+      content: "»";
+      margin-left: 5px;
+    }
+  }
+}
