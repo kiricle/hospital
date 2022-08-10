@@ -52,6 +52,8 @@
     align-items: center;
     padding: 38px 26px;
     border-radius: 16px;
+    max-width: 456px;
+    box-sizing: border-box;
   }
 
   &::after {

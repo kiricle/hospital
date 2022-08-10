@@ -28,6 +28,7 @@ body {
 
   &__img {
     width: 100%;
+    margin-bottom: 90px;
   }
 
   &__search {
@@ -38,10 +39,10 @@ body {
     border-radius: 60px;
     border: 2px solid $footer-border;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 18px;
 
     &::placeholder {
-      font-size: 24px;
+      font-size: 18px;
       color: $input-color;
       font-weight: 600;
     }
@@ -69,7 +70,7 @@ body {
     left: 55px;
     color: $input-color;
     font-weight: 900;
-    font-size: 24px;
+    font-size: 18px;
     display: inline-block;
   }
 }
