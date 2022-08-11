@@ -103,10 +103,6 @@
   .features__row {
     flex-direction: row;
   }
-
-  .border-left {
-    border-left: none;
-  }
 }
 
 @media screen and (max-width: 818px) {
@@ -136,24 +132,6 @@
     display: flex;
     flex-direction: row;
     gap: 25px;
-  }
-}
-
-.border-left {
-  border-left: 1px solid black;
-  padding-left: 52px;
-}
-
-@media screen and (max-width: 1387px) {
-  .border-left {
-    border-left: 1px solid black;
-    padding-left: 25px;
-  }
-}
-
-@media screen and (max-width: 1351px) {
-  .border-left {
-    border-left: 1px solid black;
-    padding-left: 10px;
+    margin-right: 1%;
   }
 }

@@ -1,0 +1,109 @@
+@import './partials/variables.scss';
+@import './partials/header.scss';
+@import './partials/footer.scss';
+@import './components/card.scss';
+@import './components/main-header.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+.container {
+  margin: 0 auto;
+  width: min(90%, 1412px);
+}
+
+.main {
+  width: 100%;
+}
+
+@mixin input-border {
+  border-radius: 8px;
+  border: 1px solid $review-border-color;
+  transition: .2s;
+
+  &:hover {
+    border: 1px solid $nav-color;
+  }
+  
+  &:focus {
+    outline: none;
+    border: 2px solid $nav-color;
+  }
+}
+
+
+.review-form {
+  width: 100%;
+
+  &__title {
+    font-size: 24px;
+    line-height: 140%;
+  }
+
+  &__fieldset {
+    padding: 2% 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    &_spaned {
+      grid-column: span 2;
+    }
+  }
+
+  &__label {
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: 10px;
+    width: fit-content;
+
+    &_required {
+      position: relative;
+
+      &::after {
+        content: "*";
+        position: absolute;
+        color: red;
+        right: -11px;
+      }
+    }
+  }
+
+  &__textarea {
+    resize: none;
+    font-size: 18px;
+    height: 150px;
+    padding: 20px 35px;
+    @include input-border();
+    font-family: 'Roboto', sans-serif;
+  }
+
+  &__input {
+    font-size: 18px;
+    padding: 20px 35px;
+    @include input-border();
+    max-width: 569px;
+  }
+
+  &__select {}
+
+  &__option {}
+}
+
+.oval-btn {}
