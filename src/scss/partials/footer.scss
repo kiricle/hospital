@@ -18,6 +18,7 @@
     grid-template-columns: 1fr .4fr 1.1fr;
     justify-content: center;
     margin-bottom: 50px;
+    gap: 2%;
   }
 
   &__column {
@@ -102,19 +103,35 @@
   }
 }
 
+@keyframes bob {
+  0% {
+    transform: translateY(-7px) scale(1.2);
+  }
+
+  50% {
+    transform: translateY(-1px) scale(1.2);
+  }
+
+  100% {
+    transform: translateY(-7px) scale(1.2);
+  }
+}
+
 .socials {
 
   &__images {
     display: flex;
     gap: 25px;
     margin-left: 20px;
+    align-items: center;
   }
 
   &__image {
     transition: .2s;
 
     &:hover {
-      transform: translateY(-7px) scale(1.2);
+      // transform: translateY(-7px) scale(1.1);
+      animation: bob 1.5s infinite;
       opacity: .8;
       cursor: pointer;
     }

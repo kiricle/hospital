@@ -1,0 +1,17 @@
+.rectrangle-btn {
+  width: fit-content;
+  padding: 12px 20px;
+  background-color: $btn-bgc;
+  border: none;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 140%;
+  color: $btn-color;
+  border-radius: 16px;
+  transition: background-color .2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $nav-color;
+  }
+}

@@ -1,0 +1,38 @@
+.features {
+  &__row {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    background-color: #DFF6FF;
+    padding: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.feature {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  &__number {
+    background-color: #049DD9;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  &__name {}
+
+  &__column {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-right: 1%;
+  }
+}
+
+
+

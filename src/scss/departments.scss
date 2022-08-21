@@ -3,6 +3,7 @@
 @import './partials/footer.scss';
 @import './components/card.scss';
 @import './components/main-header.scss';
+@import './components/rectangle-btn.scss';
 
 * {
   padding: 0;
@@ -27,7 +28,7 @@ body {
   width: 100%;
 
   &__img {
-    width: 100%;
+    max-width: 366px;
     margin-bottom: 90px;
   }
 
@@ -86,24 +87,6 @@ body {
     text-align: center;
     font-size: 48px;
     line-height: 140%;
-  }
-}
-
-.rectrangle-btn {
-  width: fit-content;
-  padding: 12px 20px;
-  background-color: $btn-bgc;
-  border: none;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 140%;
-  color: $btn-color;
-  border-radius: 16px;
-  transition: background-color .2s;
-  cursor: pointer;
-
-  &:hover {
-    background-color: $nav-color;
   }
 }
 

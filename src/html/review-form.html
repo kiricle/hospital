@@ -1,0 +1,44 @@
+<form class="review-form" action="#" method="get">
+  <h2 class="review-form__title">Залишити відгук</h2>
+  <fieldset class="review-form__fieldset">
+    <div class="review-form__container review-form__container_spaned">
+      <label for="comment" class="review-form__label">Ваш коментар:</label>
+      <textarea class="review-form__textarea" name="comment" placeholder="Ваш коментар...">
+      </textarea>
+    </div>
+    <div class="review-form__container">
+      <label for="name" class="review-form__label review-form__label_required">ПІБ</label>
+      <input type="text" name="name" class="review-form__input" placeholder="Бандера Степан Андрійовіч">
+    </div>
+    <div class="review-form__container">
+      <label for="phone" class="review-form__label review-form__label_required">Номер телефону</label>
+      <input type="tel" name="phone" class="review-form__input" placeholder="+3 8(0__) ___-__-__">
+    </div>
+    <div class="review-form__container">
+      <select class="review-form__select" name="department">
+        <option value="0" class="review-form__option" disabled selected>Відділення</option>
+        <option value="1" class="review-form__option">Маммологія</option>
+        <option value="2" class="review-form__option">Вакцинація</option>
+        <option value="3" class="review-form__option">Кардіологія</option>
+      </select>
+    </div>
+    <div class="review-form__container">
+      <select class="review-form__select" name="department">
+        <option value="0" class="review-form__option" disabled selected>Лікар</option>
+        <option value="1" class="review-form__option">Скоропадський</option>
+        <option value="2" class="review-form__option">Шухевич</option>
+        <option value="3" class="review-form__option">Коновалець</option>
+      </select>
+    </div>
+    <div class="review-form__container review-form__container_stars">
+      <input type="radio" name="rating" id="star1" class="review-form__star" value="5"><label for="star1" class="review-form__star-label"></label>
+      <input type="radio" name="rating" id="star2" class="review-form__star" value="4"><label for="star2" class="review-form__star-label"></label>
+      <input type="radio" name="rating" id="star3" class="review-form__star" value="3"><label for="star3" class="review-form__star-label"></label>
+      <input type="radio" name="rating" id="star4" class="review-form__star" value="2"><label for="star4" class="review-form__star-label"></label>
+      <input type="radio" name="rating" id="star5" class="review-form__star" value="1"><label for="star5" class="review-form__star-label"></label>
+    </div>
+    <div class="review-form__container">
+      <button class="oval-btn">Залишити відгук</button>
+    </div>
+  </fieldset>
+</form>

@@ -14,7 +14,7 @@
     text-align: center;
     margin-bottom: 60px;
 
-    font-size: 64px;
+    font-size: 50px;
     font-weight: 600;
     line-height: 90px;
   }
@@ -34,21 +34,24 @@
   flex-direction: column;
   gap: 50px;
 
-  &__title {}
+  &__title {
+    height: 55px;
+  }
 
   &__paragraph {}
 }
 
 .title {
   font-weight: 600;
-  font-size: 48px;
+  font-size: 50px;
   line-height: 140%;
   text-align: center;
+  margin-bottom: 60px;
 }
 
 .section-paragraph {
   font-weight: 500;
-  font-size: 32px;
+  font-size: 24px;
   line-height: 45px;
 }
 
@@ -84,7 +87,7 @@
   padding: 12px 20px;
   background-color: $btn-bgc;
   border: 2px solid $btn-border;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 140%;
   color: $btn-color;

@@ -36,7 +36,6 @@
 
   &__item {
     font-size: 24px;
-    padding-bottom: 10px;
     border-bottom: 2px solid transparent;
     transition: .2s;
     
@@ -47,6 +46,8 @@
     & a {
       text-decoration: none;
       color: $nav-color;
+      padding-bottom: 10px;
+      display: block;
     }
 
     &:hover {

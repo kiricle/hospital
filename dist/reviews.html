@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOSPITAL</title>
+  <link rel="stylesheet" href="./css/reviews.min.css?_v=20220815201331">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?_v=20220815201331">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap&_v=20220815201331" rel="stylesheet">
+</head>
+
+
+<body>
+  <div class="container">
+  <nav class="menu">
+    <div class="menu__wrap">
+      <div class="header__burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <a href="index.html" class="menu__logo">LOGO</a>
+      <ul class="links-list">
+        <li class="links-list__item"><a href="./index.html">Головна</a></li>
+        <li class="links-list__item"><a href="./departments.html">Відділення</a></li>
+        <li class="links-list__item"><a href="./doctors.html">Лікарі</a></li>
+        <li class="links-list__item"><a href="./reviews.html">Відгуки</a></li>
+        <li class="links-list__item"><a href="./contacts.html">Контакти</a></li>
+      </ul>
+      <button class="oval-btn" data-type="enroll">Записатися</button>
+    </div>
+  </nav>
+  <div class="menu__popup"></div>
+  <input type="hidden" name="activeLink" value="./reviews.html">
+</div>
+  <main class="main">
+  <header class="main-header">
+    <div class="container">
+      <h3 class="main-header__title">Відгуки</h3>
+      <div class="main-header__path">
+        <p class="main-header__node">Головна</p>
+        <p class="main-header__node">Відгуки</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="main__content">
+    <div class="container">
+      <form class="review-form" action="#" method="get">
+  <h2 class="review-form__title">Залишити відгук</h2>
+  <fieldset class="review-form__fieldset">
+    <div class="review-form__container review-form__container_spaned">
+      <label for="comment" class="review-form__label">Ваш коментар:</label>
+      <textarea class="review-form__textarea" name="comment" placeholder="Ваш коментар...">
+      </textarea>
+    </div>
+    <div class="review-form__container">
+      <label for="name" class="review-form__label review-form__label_required">ПІБ</label>
+      <input type="text" name="name" class="review-form__input" placeholder="Бандера Степан Андрійовіч">
+    </div>
+    <div class="review-form__container">
+      <label for="phone" class="review-form__label review-form__label_required">Номер телефону</label>
+      <input type="tel" name="phone" class="review-form__input" placeholder="+3 8(0__) ___-__-__">
+    </div>
+    <div class="review-form__container">
+      <select class="review-form__select" name="department">
+        <option value="0" class="review-form__option" disabled selected>Відділення</option>
+        <option value="1" class="review-form__option">Маммологія</option>
+        <option value="2" class="review-form__option">Вакцинація</option>
+        <option value="3" class="review-form__option">Кардіологія</option>
+      </select>
+    </div>
+    <div class="review-form__container">
+      <select class="review-form__select" name="department">
+        <option value="0" class="review-form__option" disabled selected>Лікар</option>
+        <option value="1" class="review-form__option">Скоропадський</option>
+        <option value="2" class="review-form__option">Шухевич</option>
+        <option value="3" class="review-form__option">Коновалець</option>
+      </select>
+    </div>
+    <div class="review-form__container review-form__container_stars">
+      <input type="radio" name="rating" id="star1" class="review-form__star" value="5"><label for="star1" class="review-form__star-label"></label>
+      <input type="radio" name="rating" id="star2" class="review-form__star" value="4"><label for="star2" class="review-form__star-label"></label>
+      <input type="radio" name="rating" id="star3" class="review-form__star" value="3"><label for="star3" class="review-form__star-label"></label>
+      <input type="radio" name="rating" id="star4" class="review-form__star" value="2"><label for="star4" class="review-form__star-label"></label>
+      <input type="radio" name="rating" id="star5" class="review-form__star" value="1"><label for="star5" class="review-form__star-label"></label>
+    </div>
+    <div class="review-form__container">
+      <button class="oval-btn">Залишити відгук</button>
+    </div>
+  </fieldset>
+</form>
+    </div>
+  </section>
+</main>
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__column">
+        <h2 class="footer__title">Ми на карті</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1324.0047261370185!2d35.05332442801894!3d48.417962846958716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbfca35286fd41%3A0x7aa878b7c6c441cb!2z0JTQvdGW0L_RgNC-0L_QtdGC0YDQvtCy0YHRjNC60LAg0L7QsdC70LDRgdC90LAg0LTQuNGC0Y_Rh9CwINC70ZbQutCw0YDQvdGP!5e0!3m2!1sru!2sua!4v1657188921517!5m2!1sru!2sua"
+          width="451" height="217" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h3 class="footer__item">Дніпропетровська обласна дитяча лікарня
+          вулиця Космічна, 13</h3>
+        <h3 class="footer__item"> Цілодобово</h3>
+      </div>
+      <div class="footer__column">
+        <h2 class="footer__title">Послуги</h2>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="./index.html" class="footer__link">Головна</a></li>
+          <li class="footer__item"><a href="./departments.html" class="footer__link">Відділення</a></li>
+          <li class="footer__item"><a href="./doctors.html" class="footer__link">Лікарі</a></li>
+          <li class="footer__item"><a href="./reviews.html" class="footer__link">Відгуки</a></li>
+          <li class="footer__item"><a href="./contacts.html" class="footer__link">Контакти</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h2 class="footer__title">Контакти</h2>
+        <div class="footer__socials socials">
+          <h3 class="footer__item">Шукайте нас:</h3>
+          <div class="socials__images">
+            <a href="https:\\www.facebook.com" target="_blank"><picture><source srcset="img/5.webp" type="image/webp"><img src="img/5.png" alt="facebook" class="socials__image"></picture></a>
+            <a href="https:\\www.instagram.com" target="_blank"><picture><source srcset="img/6.webp" type="image/webp"><img src="img/6.png" alt="instagram" class="socials__image"></picture></a>
+            <a href="https:\\www.youtube.com" target="_blank"><picture><source srcset="img/7.webp" type="image/webp"><img src="img/7.png" alt="youtube" class="socials__image"></picture></a>
+          </div>
+        </div>
+        <h3 class="footer__item"><a href="mailto:info@kosmichna.ua" class="footer__link">info@kosmichna.ua</a></h3>
+        <h3 class="footer__item"><a href="tel:380563788000" class="footer__link">056 378 8000</a></h3>
+        <button class="oval-btn">Залишити відгуки</button>
+      </div>
+    </div>
+  </div>
+  <footer class="subfooter">
+    <h3 class="subfooter__title">&copy; MageekSoft 2022. Всі права захищені.</h3>
+  </footer>
+</footer>
+  <script src="./js/app.min.js?_v=20220815201331"></script>
+</body>
+
+</html>

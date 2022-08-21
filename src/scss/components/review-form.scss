@@ -1,0 +1,135 @@
+@mixin input-border {
+  border-radius: 8px;
+  border: 1px solid $review-border-color;
+  transition: .2s;
+
+  &:hover {
+    border: 1px solid $nav-color;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid $nav-color;
+  }
+}
+
+
+.review-form {
+  width: 100%;
+
+  &__title {
+    font-size: 24px;
+    line-height: 140%;
+    margin-top: 90px;
+    margin-bottom: 24px;
+  }
+
+  &__fieldset {
+    padding: 2% 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    border: 2px solid $review-border-color;
+    border-radius: 16px;
+    gap: 20px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    &_spaned {
+      grid-column: span 2;
+    }
+
+    &_stars {
+      flex-direction: row;
+      gap: 5px;
+      align-items: baseline;
+      justify-content: flex-end;
+      transform: rotateY(180deg);
+    }
+  }
+
+  &__star {
+    appearance: none;
+  }
+
+  &__star-label {
+    display: block;
+    cursor: pointer;
+    position: relative;
+
+    &::before {
+      content: '\f005';
+      font-family: fontAwesome;
+      color: $unchecked-star-color;
+      position: relative;
+      display: block;
+      font-size: 30px;
+    }
+
+    &::after {
+      content: '\f005';
+      font-family: fontAwesome;
+      color: $checked-star-color;
+      position: absolute;
+      display: block;
+      font-size: 30px;
+      top: 0;
+      opacity: 0;
+      transition: .3s;
+    }
+
+    &:hover::after,
+    &:hover ~ &:after,
+    .review-form__star:checked ~ &::after{
+      opacity: 1;
+    }
+  }
+
+
+
+  &__label {
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: 10px;
+    width: fit-content;
+
+    &_required {
+      position: relative;
+
+      &::after {
+        content: "*";
+        position: absolute;
+        color: red;
+        right: -11px;
+      }
+    }
+  }
+
+  &__textarea {
+    resize: none;
+    font-size: 18px;
+    height: 150px;
+    padding: 20px 35px;
+    @include input-border();
+    font-family: 'Roboto', sans-serif;
+  }
+
+  &__input {
+    font-size: 18px;
+    padding: 20px 35px;
+    @include input-border();
+    max-width: 569px;
+  }
+
+  &__select {
+    width: fit-content;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+  }
+
+  &__option {}
+}

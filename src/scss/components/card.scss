@@ -1,3 +1,5 @@
+@import './feature.scss';
+
 .card {
   border: 2px solid #E2E2E2;
   padding: 45px;
@@ -23,38 +25,35 @@
   &__info {}
 
   &__title {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 140%;
     margin-bottom: 16px;
   }
 
   &__description {
-    font-size: 24px;
+    font-size: 18px;
     line-height: 140%;
     &:nth-of-type(2) {
       margin-top: 16px;
     }
   }
-
-  &__features {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 140%;
-    background-color: #DFF6FF;
-    padding: 32px;
-    border-radius: 8px;
-  }
 }
 
 .features {
   &__row {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    background-color: #DFF6FF;
+    padding: 32px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 }
 
-@media screen and (max-width: 1309px) {
+@media screen and (max-width: 1209px) {
   .features {
     &__row {
       display: flex;
@@ -74,7 +73,7 @@
   }
 }
 
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 845px) {
   .card__row {
     flex-direction: column;
   }
@@ -105,7 +104,7 @@
   }
 }
 
-@media screen and (max-width: 818px) {
+@media screen and (max-width: 705px) {
   .feature__column {
     flex-direction: column;
   }
@@ -114,24 +113,3 @@
   }
 }
 
-.feature {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-
-  &__number {
-    background-color: #049DD9;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-  }
-
-  &__name {}
-
-  &__column {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-    margin-right: 1%;
-  }
-}
